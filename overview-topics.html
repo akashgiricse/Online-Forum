@@ -237,38 +237,40 @@
             <li class="page-item"><a href="#0" class="page-link">Next</a></li>
           </ul>
         </nav>
+        <form class="form-inline float-lg-left d-block d-sm-flex">
+          <div class="mb-2 mb-sm-0 mr-2">Display posts from previous:</div>
+          <div class="form-group mr-2">
+            <label class="sr-only" for="select-time">Time period</label>
+            <select class="form-control form-control-sm" id="select-time">
+              <option value="all-posts" selected>All posts</option>
+              <option value="day">1 day</option>
+              <option value="week">1 week</option>
+              <option value="month">1 month</option>
+              <option value="year">1 year</option>
+            </select>
+          </div>
+          <div class="mb-2 mb-sm-0 mr-2">Sort by:</div>
+          <div class="form-group mr-2">
+            <label class="sr-only" for="select-sort">Sort by:</label>
+            <select class="form-control form-control-sm" id="select-sort">
+              <option value="author" >Author</option>
+              <option value="post-time" selected>Post time</option>
+              <option value="replies">Replies</option>
+              <option value="subject">Subject</option>
+              <option value="views">Views</option>
+            </select>
+          </div>
+          <div class="form-group mr-2">
+            <label class="sr-only" for="select-direction">Sort direction</label>
+            <select class="form-control form-control-sm" id="select-direction">
+              <option value="ascending" >Ascending</option>
+              <option value="descending" selected>Descending</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-sm btn-primary">Go</button>
+        </form>
       </div>
-      <form class="form-inline float-lg-left d-block d-sm-flex">
-        <div class="mb-2 mb-sm-0 mr-2">Display posts from previous:</div>
-        <div class="form-group mr-2">
-          <label class="sr-only" for="select-time">Time period</label>
-          <select class="form-control form-control-sm" id="select-time">
-            <option value="all-posts" selected>All posts</option>
-            <option value="day">1 day</option>
-            <option value="week">1 week</option>
-            <option value="month">1 month</option>
-            <option value="year">1 year</option>
-          </select>
-        </div>
-        <div class="mb-2 mb-sm-0 mr-2">Sort by:</div>
-        <div class="form-group mr-2">
-          <label class="sr-only" for="select-sort">Sort by:</label>
-          <select class="form-control form-control-sm" id="select-sort">
-            <option value="author" >Author</option>
-            <option value="post-time" selected>Post time</option>
-            <option value="replies">Replies</option>
-            <option value="subject">Subject</option>
-            <option value="views">Views</option>
-          </select>
-        </div>
-        <div class="form-group mr-2">
-          <label class="sr-only" for="select-direction">Sort direction</label>
-          <select class="form-control form-control-sm" id="select-direction">
-            <option value="ascending" >Ascending</option>
-            <option value="descending" selected>Descending</option>
-          </select>
-        </div>
-      </form>
+      <a href="#0" class="btn btn-lg btn-primary">New Topic</a>
     </div> 
     <footer class="small bg-dark text-white">
       <div class="container py-4">
