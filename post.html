@@ -110,11 +110,29 @@
       <form class="mb-3">
         <div class="form-group">
           <label for="comment">Reply to this post:</label>
-          <textarea class="form-control" id="comment rows="10" placeholder="Write your comment here." required></textarea>
+          <textarea class="form-control" id="comment" rows="10" placeholder="Write your comment here." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Reply</button>
         <button type="reset" class="btn btn-danger">Reset</button>
-      </form> 
+      </form>
+      <div>
+        <div class="d-lg-flex align-items-lg-center mb-3">
+          <form class="form-inline d-block d-sm-flex mr-2 mb-3 mb-lg-0">
+            <div class="form-group mr-2 mb-3 mb-md-0">
+              <label for="email" class="mr-2">Email:</label>
+              <input type="email" class="form-control" placeholder="example@email.com" id="email" required>
+            </div>
+            <div class="form-group mr-2">
+              <label for="password" class="mr-2">Password:</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <span class="mr-2">or ...</span>
+          <a href="#0" class="btn btn-success">Create account</a>
+        </div>
+        <p class="small"><a href="#0">Have you forgotten your account details?</a></p>
+      </div> 
     </div> 
     <footer class="small bg-dark text-white">
       <div class="container py-4">
